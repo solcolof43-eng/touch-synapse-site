@@ -128,3 +128,9 @@ if('startViewTransition'in document){
     document.startViewTransition(()=>target.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'}));
   }));
 }
+
+// Progressive enhancement module: themes, languages, details, particles and back-to-top.
+const enhancementScript=document.createElement('script');
+enhancementScript.src='assets/enhancements.js';
+enhancementScript.defer=true;
+document.head.appendChild(enhancementScript);
